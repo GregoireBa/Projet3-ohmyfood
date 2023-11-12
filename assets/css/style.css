@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("/assets/fonts/Shrikhand-Regular.woff2") format("woff2"), url("/assets/fonts/Shrikhand-Regular.woff") format("woff"), url("/assets/fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Regular.woff2") format("woff2"), url("/assets/fonts/Roboto-Regular.woff") format("woff"), url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+blockquote,
+figure {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  border: none;
+}
+
+blockquote {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+  border: none;
+}
+
+button, input[type=submit] {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+}
+
+input {
+  font-family: inherit;
+}
+
+.blockquote {
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Media query pour les tablettes */
+/* Media query pour les desktops */
+
+/*# sourceMappingURL=style.css.map */
