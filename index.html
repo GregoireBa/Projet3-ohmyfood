@@ -11,46 +11,55 @@
 
 <body>
     <header>
-        <div class="logo"><img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"></div>
-        <div class="pos"><i class="fa-solid fa-location-dot"></i><input type="text" name="localisation"
-                id="localisation" placeholder="Paris, Belleville"></div>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        </div>
+        <!-- INPUT LOCALISATION -->
+        <div class="pos">
+            <i class="fa-solid fa-location-dot"></i>
+            <input class="pos__input" type="text" name="localisation" id="localisation" placeholder="Paris, Belleville">
+        </div>
     </header>
 
     <main>
 
-        <!-- EXPLORE -->
-
-        <div class="">
-
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
-
+        <!-- HEADER SECTION CTA -->
+        <div class="section-cta">
+            <h1 class="h1__cta">Réservez le menu qui vous convient</h1>
+            <p class="p__header">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+            <button class="btn-cta">Explorer nos restaurants</button>
         </div>
 
         <!-- -->
 
         <!-- FONCTIONNEMENT -->
 
-        <div class="">
+        <div class="section-guide">
 
             <h1>Fonctionnement</h1>
-            <div>
-                <div><span>1</span></div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <p>Choisissez un restaurant</p>
-            </div>
-            <div>
-                <div><span>2</span></div>
-                <i class="fa-solid fa-list"></i>
-                <p>Composez votre menu</p>
-            </div>
-            <div>
-                <div><span>3</span></div>
-                <i class="fa-solid fa-store"></i>
-                <p>Dégustez au restaurant</p>
-            </div>
 
+            <div class="container-card-guide">
+
+                <div class="card-guide">
+                    <div class="number-guide"><span>1</span></div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p class="p__guide">Choisissez un restaurant</p>
+                </div>
+
+                <div class="card-guide">
+                    <div class="number-guide"><span>2</span></div>
+                    <i class="fa-solid fa-list"></i>
+                    <p class="p__guide">Composez votre menu</p>
+                </div>
+
+                <div class="card-guide">
+                    <div class="number-guide"><span>3</span></div>
+                    <i class="fa-solid fa-store"></i>
+                    <p class="p__guide">Dégustez au restaurant</p>
+                </div>
+
+            </div>
         </div>
 
         <!-- -->

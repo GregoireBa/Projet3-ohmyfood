@@ -1,13 +1,7 @@
-@font-face {
-  font-family: 'Shrikhand';
-  src: url('/assets/fonts/Shrikhand-Regular.woff2') format('woff2'),
-      url('/assets/fonts/Shrikhand-Regular.woff') format('woff'),
-      url('/assets/fonts/Shrikhand-Regular.ttf') format('truetype');
-}
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.woff2') format('woff2'),
-      url('/assets/fonts/Roboto-Regular.woff') format('woff'),
-      url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
-}
+// Shrikhand
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+// Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
