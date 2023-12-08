@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body {
@@ -74,13 +75,17 @@ body {
 }
 
 h1 {
+  line-height: 0;
+}
+
+h2 {
   font-size: 24px;
   font-weight: 700;
   font-family: Roboto;
   color: #000000;
   margin-bottom: 28px;
 }
-h1.h1__cta {
+h2.h2__cta {
   max-width: 275px;
   margin: 0 auto;
   text-align: center;
@@ -88,9 +93,28 @@ h1.h1__cta {
   margin-bottom: 0px;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Roboto;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+h4 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+section {
+  padding: 50px 20px;
+}
+
 p {
   font-family: Roboto;
-  color: #353535;
+  font-weight: normal;
 }
 p.p__header {
   font-size: 18px;
@@ -103,7 +127,7 @@ p.p__guide {
   font-weight: 500;
 }
 p.p__card-dish {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
 }
 p.p__footer {
@@ -144,7 +168,6 @@ p.p__footer {
 }
 
 .section-cta {
-  padding: 35px 34px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,7 +177,7 @@ p.p__footer {
 
 .btn-cta {
   padding: 13px 18.75px;
-  background: linear-gradient(0, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   color: #ffffff;
   font-size: 16px;
@@ -168,7 +191,6 @@ p.p__footer {
 
 .section-guide {
   background-color: #ffffff;
-  padding: 50px 20px;
 }
 
 .container-card-guide {
@@ -207,8 +229,165 @@ p.p__footer {
 }
 
 .card-guide > .fa-solid {
-  width: 13px;
+  font-size: 18px;
   color: #7E7E7E;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 18px 0;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.card__image {
+  height: 231px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card__infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.card__icon .fa-heart {
+  font-size: 22px;
+  letter-spacing: normal;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.heart-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Style de l'icône de coeur régulier (non cochée) */
+.heart-label i.fa-regular.fa-heart {
+  display: inline-block;
+}
+
+/* Style de l'icône de coeur solide (cochée) */
+.heart-label i.fa-solid.fa-heart {
+  display: none;
+}
+
+/* Lorsque la case à cocher est cochée, affichez l'icône de coeur solide */
+.hidden-checkbox:checked + .heart-label i.fa-regular.fa-heart {
+  display: none;
+}
+
+.hidden-checkbox:checked + .heart-label i.fa-solid.fa-heart {
+  display: inline-block;
+  background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%); /* Changez la couleur selon vos préférences */
+  -webkit-background-clip: text; /* Permet au dégradé de remplir le texte */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Cache la couleur du texte */
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Roboto;
+  padding: 22px 25px;
+}
+
+.logo-footer {
+  width: 100px;
+  height: 27px;
+  fill: white;
+  margin-bottom: 16px;
+}
+
+.list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.fa-utensils, .fa-handshake-angle {
+  width: 11px;
+  height: 13px;
+  margin-right: 11px;
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  animation: hideLoader 0.5s ease-out 3s forwards;
+}
+
+.loader {
+  font-size: 2rem;
+  font-family: roboto;
+  font-weight: 600;
+  letter-spacing: 5px;
+  display: flex;
+}
+
+.loader span {
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hideLoader {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* Répartir les animations des lettres sur une période de 2.5s */
+.loader span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.loader span:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.loader span:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.loader span:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+.loader span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+.loader span:nth-child(8) {
+  animation-delay: 2.1s;
 }
 
 /* Media query pour les tablettes */

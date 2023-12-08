@@ -1,3 +1,3 @@
 # Watch live SCSS
 
-sass --watch assets/scss:css
+sass --watch assets/scss:assets/css
