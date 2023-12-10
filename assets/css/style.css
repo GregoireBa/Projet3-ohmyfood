@@ -136,9 +136,21 @@ p.p__footer {
   font-weight: 500;
 }
 
+.fa-heart {
+  font-size: 22px;
+}
+
+.line {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
   padding: 15px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
@@ -167,6 +179,14 @@ p.p__footer {
   font-weight: 500;
 }
 
+.link-return {
+  position: absolute;
+  left: 17px;
+}
+.link-return .fa-arrow-left {
+  font-size: 30px;
+}
+
 .section-cta {
   display: flex;
   flex-direction: column;
@@ -177,7 +197,7 @@ p.p__footer {
 
 .btn-cta {
   padding: 13px 18.75px;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   color: #ffffff;
   font-size: 16px;
@@ -185,7 +205,7 @@ p.p__footer {
   border-radius: 25px;
 }
 .btn-cta:hover {
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
@@ -230,7 +250,7 @@ p.p__footer {
 
 .card-guide > .fa-solid {
   font-size: 18px;
-  color: #7E7E7E;
+  color: #7e7e7e;
 }
 
 .card {
@@ -239,6 +259,7 @@ p.p__footer {
   margin: 18px 0;
   border-radius: 15px;
   background-color: #ffffff;
+  position: relative;
 }
 
 .card__image {
@@ -254,11 +275,6 @@ p.p__footer {
   padding: 15px;
 }
 
-.card__icon .fa-heart {
-  font-size: 22px;
-  letter-spacing: normal;
-}
-
 .hidden-checkbox {
   display: none;
 }
@@ -268,27 +284,40 @@ p.p__footer {
   cursor: pointer;
 }
 
-/* Style de l'icône de coeur régulier (non cochée) */
 .heart-label i.fa-regular.fa-heart {
   display: inline-block;
 }
 
-/* Style de l'icône de coeur solide (cochée) */
 .heart-label i.fa-solid.fa-heart {
   display: none;
 }
 
-/* Lorsque la case à cocher est cochée, affichez l'icône de coeur solide */
 .hidden-checkbox:checked + .heart-label i.fa-regular.fa-heart {
   display: none;
 }
 
 .hidden-checkbox:checked + .heart-label i.fa-solid.fa-heart {
   display: inline-block;
-  background: linear-gradient(194deg, #9356DC 0%, #FF79DA 100%); /* Changez la couleur selon vos préférences */
-  -webkit-background-clip: text; /* Permet au dégradé de remplir le texte */
+  background: linear-gradient(194deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent; /* Cache la couleur du texte */
+  -webkit-text-fill-color: transparent;
+}
+
+.new {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #008766;
+  background-color: #99e2d0;
+  padding: 7px 9px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.new p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 footer {
@@ -312,7 +341,8 @@ footer {
   gap: 7px;
 }
 
-.fa-utensils, .fa-handshake-angle {
+.fa-utensils,
+.fa-handshake-angle {
   width: 11px;
   height: 13px;
   margin-right: 11px;
@@ -388,6 +418,62 @@ footer {
 
 .loader span:nth-child(8) {
   animation-delay: 2.1s;
+}
+
+.title-menu-fav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px 17px 42px 17px;
+}
+
+.banner-header img {
+  width: 100%;
+  max-height: 275px;
+  object-fit: cover;
+}
+
+.h2_menu {
+  margin: 0;
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container-menu {
+  position: relative;
+  max-width: 1055px;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  margin-top: -50px;
+  z-index: 999;
+}
+.container-menu section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.card-food-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.__card-food-menu-title-p {
+  list-style: none;
+}
+.__card-food-menu-title-p h3 {
+  margin: 0;
+  padding: 0;
+}
+.__card-food-menu-title-p p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Media query pour les tablettes */
