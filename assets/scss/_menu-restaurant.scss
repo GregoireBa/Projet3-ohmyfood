@@ -1,10 +1,23 @@
+.mainMenu {
+  background-color: white;
+}
+
+.btn-cta-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 // -----Banner
 
 .title-menu-fav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding:32px 17px 42px 17px;
+  padding: 32px 17px 42px 17px;
+  gap: 30px;
 }
 
 .banner-header {
@@ -23,7 +36,22 @@
   font-weight: 400;
 }
 
+.h3-section-menu {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
 // contenu restaurant
+
+.carte-menu {
+  padding: 0 20px 40px 20px;
+}
 
 .container-menu {
   position: relative;
@@ -31,38 +59,127 @@
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
   margin-top: -50px;
+  margin: -50px auto 0 auto;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  section{
+  section {
     display: flex;
     flex-direction: column;
     gap: 10px 0;
+    justify-content: center;
+    max-width: 635px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
-.card-food-menu{
+.card-food-item {
+  max-width: 605px;
+  display: flex;
+  background-color: $white;
+  border-radius: 15px;
+  animation: fadeInUp 3s ease-out forwards;
+  opacity: 0;
+}
 
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les éléments de la section 'Entrées' */
+.carte-menu:nth-of-type(1) .card-food-item:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.carte-menu:nth-of-type(1) .card-food-item:nth-of-type(2) {
+  animation-delay: 1s;
+}
+.carte-menu:nth-of-type(1) .card-food-item:nth-of-type(3) {
+  animation-delay: 1.5s;
+}
+
+.carte-menu:nth-of-type(1) .card-food-item:nth-of-type(4) {
+  animation-delay: 1.9s;
+}
+
+/* Animation pour les éléments de la section 'Plats' */
+.carte-menu:nth-of-type(2) .card-food-item:nth-of-type(1) {
+  animation-delay: 2s;
+}
+.carte-menu:nth-of-type(2) .card-food-item:nth-of-type(2) {
+  animation-delay: 2.5s;
+}
+.carte-menu:nth-of-type(2) .card-food-item:nth-of-type(3) {
+  animation-delay: 3s;
+}
+
+/* Animation pour les éléments de la section 'Desserts' */
+.carte-menu:nth-of-type(3) .card-food-item:nth-of-type(1) {
+  animation-delay: 3.5s;
+}
+.carte-menu:nth-of-type(3) .card-food-item:nth-of-type(2) {
+  animation-delay: 4s;
+}
+.carte-menu:nth-of-type(3) .card-food-item:nth-of-type(3) {
+  animation-delay: 4.5s;
+}
+
+.card-food-item__description {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
-  background-color: $white;
-  border-radius: 15px;
-  padding:15px;
+  padding: 15px;
 }
 
-.__card-food-menu-title-p{
+.card-food-item__hover-btn {
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  min-width: 0px;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  opacity: 0;
+  transition: min-width 0.5s ease-in-out, opacity 0.5s ease-in-out,
+  visibility 0.5s ease-in-out;
+}
 
-  list-style: none;
+.card-food-item:hover .card-food-item__hover-btn {
+  min-width: 59px;
+  opacity: 1;
+  visibility: visible;
+}
+.card-food-item__subtitle {
+  font-family: $font-global;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+}
 
-  h3{
-    margin:0;
-    padding: 0;
-  }
+.card-food-item__title {
+  font-family: $font-global;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
 
-  p{
-    margin:0;
-    padding: 0;
-  }
-
+.card-food-item__price {
+  font-family: $font-global;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  color: #353535;
 }

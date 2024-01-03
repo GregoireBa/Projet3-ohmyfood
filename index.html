@@ -25,46 +25,49 @@
     <main>
 
         <!-- LOADER -->
-        <!-- <div class="loader-wrapper">
+        <div class="loader-wrapper">
             <div class="loader">
                 <span>O</span><span>H</span><span>M</span><span>Y</span><span>F</span><span>O</span><span>O</span><span>D</span>
             </div>
-        </div> -->
+        </div>
 
         <!-- HEADER SECTION CTA -->
         <section class="section-cta">
-            <h2 class="h2__cta">Réservez le menu qui vous convient</h2>
-            <p class="p__header">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <button class="btn-cta">Explorer nos restaurants</button>
+            <div class="container">
+                <h2 class="h2__cta">Réservez le menu qui vous convient</h2>
+                <p class="p__header">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+                <button class="btn-cta">Explorer nos restaurants</button>
+            </div>
         </section>
         <!-- -->
 
         <!-- FONCTIONNEMENT -->
 
         <section class="section-guide">
+            <div class="container">
+                <h2>Fonctionnement</h2>
 
-            <h2>Fonctionnement</h2>
+                <div class="container-card-guide">
 
-            <div class="container-card-guide">
+                    <div class="card-guide">
+                        <div class="number-guide"><span>1</span></div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p class="p__guide">Choisissez un restaurant</p>
+                    </div>
 
-                <div class="card-guide">
-                    <div class="number-guide"><span>1</span></div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <p class="p__guide">Choisissez un restaurant</p>
+                    <div class="card-guide">
+                        <div class="number-guide"><span>2</span></div>
+                        <i class="fa-solid fa-list"></i>
+                        <p class="p__guide">Composez votre menu</p>
+                    </div>
+
+                    <div class="card-guide">
+                        <div class="number-guide"><span>3</span></div>
+                        <i class="fa-solid fa-store"></i>
+                        <p class="p__guide">Dégustez au restaurant</p>
+                    </div>
+
                 </div>
-
-                <div class="card-guide">
-                    <div class="number-guide"><span>2</span></div>
-                    <i class="fa-solid fa-list"></i>
-                    <p class="p__guide">Composez votre menu</p>
-                </div>
-
-                <div class="card-guide">
-                    <div class="number-guide"><span>3</span></div>
-                    <i class="fa-solid fa-store"></i>
-                    <p class="p__guide">Dégustez au restaurant</p>
-                </div>
-
             </div>
         </section>
 
@@ -74,98 +77,104 @@
         <!-- LIST RESTAURANT -->
 
         <section class="section-restaurant">
+            <div class="container">
+                <h3>Restaurant</h3>
 
-            <h3>Restaurant</h3>
-            <a href="/pages/La-palette-du-gout.html">
-                <div class="card">
-                    <div class="new">
-                        <p>Nouveau</p>
-                    </div>
-                    <img class="card__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="restaurant la palette du gout">
-                    <div class="card__infos">
-                        <div class="card__texte">
-                            <h4>La palette du goût</h4>
-                            <p class="p__card-dish">Ménilmontant</p>
-                        </div>
+                <div class="container__items">
 
-                        <div class="card__icon">
-                            <input type="checkbox" id="fav-palette-du-gout" class="hidden-checkbox">
-                            <label for="fav-palette-du-gout" class="heart-label">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                            </label>
+                    <a href="/pages/La-palette-du-gout.html">
+                        <div class="card">
+                            <div class="new">
+                                <p>Nouveau</p>
+                            </div>
+                            <img class="card__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="restaurant la palette du gout">
+                            <div class="card__infos">
+                                <div class="card__texte">
+                                    <h4>La palette du goût</h4>
+                                    <p class="p__card-dish">Ménilmontant</p>
+                                </div>
+
+                                <div class="card__icon">
+                                    <input type="checkbox" id="fav-palette-du-gout" class="hidden-checkbox">
+                                    <label for="fav-palette-du-gout" class="heart-label">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
+                    <a href="pages/la-note-enchantee.html">
+                        <div class="card">
+                            <div class="new">
+                                <p>Nouveau</p>
+                            </div>
+                            <img class="card__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="restaurant la note echantée">
+                            <div class="card__infos">
+                                <div class="card__texte">
+                                    <h4>La note enchantée</h4>
+                                    <p class="p__card-dish">Charonne</p>
+                                </div>
+
+                                <div class="card__icon">
+                                    <input type="checkbox" id="fav-note-echantee" class="hidden-checkbox">
+                                    <label for="fav-note-echantee" class="heart-label">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/pages/a-la-francaise.html">
+                        <div class="card">
+                            <img class="card__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="restaurant à la française">
+                            <div class="card__infos">
+                                <div class="card__texte">
+                                    <h4>À la française</h4>
+                                    <p class="p__card-dish">Cité Rouge</p>
+                                </div>
+
+                                <div class="card__icon">
+                                    <input type="checkbox" id="fav-menilmontant" class="hidden-checkbox">
+                                    <label for="fav-menilmontant" class="heart-label">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/pages/le-delice-des-sens.html">
+                        <div class="card">
+                            <img class="card__image"
+                                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="restaurant le délice des sens">
+                            <div class="card__infos">
+                                <div class="card__texte">
+                                    <h4>Le délice des sens</h4>
+                                    <p class="p__card-dish">Folie-Méricourt</p>
+                                </div>
+
+                                <div class="card__icon">
+                                    <input type="checkbox" id="fav-delice-des-sens" class="hidden-checkbox">
+                                    <label for="fav-delice-des-sens" class="heart-label">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-            </a>
-
-            <a href="pages/la-note-enchantee.html">
-                <div class="card">
-                    <div class="new">
-                        <p>Nouveau</p>
-                    </div>
-                    <img class="card__image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                        alt="restaurant la note echantée">
-                    <div class="card__infos">
-                        <div class="card__texte">
-                            <h4>La note enchantée</h4>
-                            <p class="p__card-dish">Charonne</p>
-                        </div>
-
-                        <div class="card__icon">
-                            <input type="checkbox" id="fav-note-echantee" class="hidden-checkbox">
-                            <label for="fav-note-echantee" class="heart-label">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/pages/a-la-francaise.html">
-                <div class="card">
-                    <img class="card__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                        alt="restaurant à la française">
-                    <div class="card__infos">
-                        <div class="card__texte">
-                            <h4>À la française</h4>
-                            <p class="p__card-dish">Cité Rouge</p>
-                        </div>
-
-                        <div class="card__icon">
-                            <input type="checkbox" id="fav-menilmontant" class="hidden-checkbox">
-                            <label for="fav-menilmontant" class="heart-label">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="/pages/le-delice-des-sens.html">
-                <div class="card">
-                    <img class="card__image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="restaurant le délice des sens">
-                    <div class="card__infos">
-                        <div class="card__texte">
-                            <h4>Le délice des sens</h4>
-                            <p class="p__card-dish">Folie-Méricourt</p>
-                        </div>
-
-                        <div class="card__icon">
-                            <input type="checkbox" id="fav-delice-des-sens" class="hidden-checkbox">
-                            <label for="fav-delice-des-sens" class="heart-label">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-heart"></i>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
+            </div>
         </section>
 
         <!-- -->
@@ -195,9 +204,9 @@
 
         <ul class="list-footer">
             <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
-            <li><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
+            <li class="gap"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
             <li>Mentions légales</li>
-            <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+            <li class="gap"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
         </ul>
 
     </footer>

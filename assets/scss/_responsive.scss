@@ -1,9 +1,55 @@
 /* Media query pour les tablettes */
 @media (min-width: 768px) {
-    
-  }
-  
+}
+
 /* Media query pour les desktops */
 @media (min-width: 1024px) {
+  footer {
+    background-color: #353535;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Roboto;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+  }
 
+  .list-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    order: 1;
+  }
+
+  .logo-footer {
+    order: 2;
+    margin-bottom: 0;
+  }
+  .gap {
+    margin-right: 50px;
+  }
+
+  h2.h2__cta {
+    max-width: 100%;
+  }
+
+  .container-card-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .card-guide {
+    margin: 0;
+  }
+
+  .container__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px 100px;
+  }
 }

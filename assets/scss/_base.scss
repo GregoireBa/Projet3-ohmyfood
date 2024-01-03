@@ -29,6 +29,8 @@ h3 {
   font-family: $font-global;
   color: $color-black;
   margin-bottom: 28px;
+  padding:0;
+  margin:0;
 }
 
 h4 {
@@ -36,6 +38,10 @@ h4 {
   font-size: 18px;
   font-weight: 700;
   color: $color-black;
+
+&.__h4-menu{
+  font-weight: 500;
+}
 }
 
 section {
@@ -78,6 +84,13 @@ p {
   width: 40px;
   height: 3px;
   background-color: $bg-line;
+  margin:0;
+  padding:0;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 // HEADER
@@ -140,16 +153,19 @@ p {
 }
 
 .btn-cta {
+  display: block;
+  margin: 0 auto;
   padding: 13px 18.75px;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: linear-gradient(180deg, #E672DA 20%, #ba62db 100%);
   box-shadow: 0px 4px 10px 0px #00000040;
   color: $white;
   font-size: 16px;
   font-weight: 500;
   border-radius: 25px;
+  transition: 0.3s;
 
   &:hover {
-    background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+    background: linear-gradient(180deg, #EE88E0 0%, #B876E1 100%);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   }
 }
@@ -195,12 +211,19 @@ p {
   color: $white;
 }
 
-.card-guide > .fa-solid {
+
+
+.card-guide > .fa-mobile-screen-button, .fa-list {
   font-size: 18px;
   color: #7e7e7e;
 }
 
+.fa-store{
+  font-size: 18px;
+  color:#9356DC;
+}
 // SECTION RESTAURANT
+
 
 .card {
   display: flex;

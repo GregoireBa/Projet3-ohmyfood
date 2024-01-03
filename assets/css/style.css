@@ -99,6 +99,8 @@ h3 {
   font-family: Roboto;
   color: #000000;
   margin-bottom: 28px;
+  padding: 0;
+  margin: 0;
 }
 
 h4 {
@@ -106,6 +108,9 @@ h4 {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
+}
+h4.__h4-menu {
+  font-weight: 500;
 }
 
 section {
@@ -144,6 +149,13 @@ p.p__footer {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -196,16 +208,19 @@ p.p__footer {
 }
 
 .btn-cta {
+  display: block;
+  margin: 0 auto;
   padding: 13px 18.75px;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background: linear-gradient(180deg, #E672DA 20%, #ba62db 100%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   border-radius: 25px;
+  transition: 0.3s;
 }
 .btn-cta:hover {
-  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: linear-gradient(180deg, #EE88E0 0%, #B876E1 100%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
@@ -248,9 +263,14 @@ p.p__footer {
   color: #ffffff;
 }
 
-.card-guide > .fa-solid {
+.card-guide > .fa-mobile-screen-button, .fa-list {
   font-size: 18px;
   color: #7e7e7e;
+}
+
+.fa-store {
+  font-size: 18px;
+  color: #9356DC;
 }
 
 .card {
@@ -420,11 +440,24 @@ footer {
   animation-delay: 2.1s;
 }
 
+.mainMenu {
+  background-color: white;
+}
+
+.btn-cta-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .title-menu-fav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 32px 17px 42px 17px;
+  gap: 30px;
 }
 
 .banner-header img {
@@ -441,42 +474,201 @@ footer {
   font-weight: 400;
 }
 
+.h3-section-menu {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.carte-menu {
+  padding: 0 20px 40px 20px;
+}
+
 .container-menu {
   position: relative;
   max-width: 1055px;
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
   margin-top: -50px;
+  margin: -50px auto 0 auto;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container-menu section {
   display: flex;
   flex-direction: column;
   gap: 10px 0;
+  justify-content: center;
+  max-width: 635px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.card-food-menu {
+.card-food-item {
+  max-width: 605px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 15px;
+  animation: fadeInUp 3s ease-out forwards;
+  opacity: 0;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation pour les éléments de la section 'Entrées' */
+.carte-menu:nth-of-type(1) .card-food-item:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+
+.carte-menu:nth-of-type(1) .card-food-item:nth-of-type(2) {
+  animation-delay: 1s;
+}
+
+.carte-menu:nth-of-type(1) .card-food-item:nth-of-type(3) {
+  animation-delay: 1.5s;
+}
+
+.carte-menu:nth-of-type(1) .card-food-item:nth-of-type(4) {
+  animation-delay: 1.9s;
+}
+
+/* Animation pour les éléments de la section 'Plats' */
+.carte-menu:nth-of-type(2) .card-food-item:nth-of-type(1) {
+  animation-delay: 2s;
+}
+
+.carte-menu:nth-of-type(2) .card-food-item:nth-of-type(2) {
+  animation-delay: 2.5s;
+}
+
+.carte-menu:nth-of-type(2) .card-food-item:nth-of-type(3) {
+  animation-delay: 3s;
+}
+
+/* Animation pour les éléments de la section 'Desserts' */
+.carte-menu:nth-of-type(3) .card-food-item:nth-of-type(1) {
+  animation-delay: 3.5s;
+}
+
+.carte-menu:nth-of-type(3) .card-food-item:nth-of-type(2) {
+  animation-delay: 4s;
+}
+
+.carte-menu:nth-of-type(3) .card-food-item:nth-of-type(3) {
+  animation-delay: 4.5s;
+}
+
+.card-food-item__description {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: #ffffff;
-  border-radius: 15px;
   padding: 15px;
 }
 
-.__card-food-menu-title-p {
-  list-style: none;
+.card-food-item__hover-btn {
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  min-width: 0px;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  opacity: 0;
+  transition: min-width 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-.__card-food-menu-title-p h3 {
-  margin: 0;
-  padding: 0;
+
+.card-food-item:hover .card-food-item__hover-btn {
+  min-width: 59px;
+  opacity: 1;
+  visibility: visible;
 }
-.__card-food-menu-title-p p {
-  margin: 0;
-  padding: 0;
+
+.card-food-item__subtitle {
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.card-food-item__title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.card-food-item__price {
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  color: #353535;
 }
 
 /* Media query pour les tablettes */
 /* Media query pour les desktops */
+@media (min-width: 1024px) {
+  footer {
+    background-color: #353535;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Roboto;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+  }
+  .list-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    order: 1;
+  }
+  .logo-footer {
+    order: 2;
+    margin-bottom: 0;
+  }
+  .gap {
+    margin-right: 50px;
+  }
+  h2.h2__cta {
+    max-width: 100%;
+  }
+  .container-card-guide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .card-guide {
+    margin: 0;
+  }
+  .container__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 100px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
