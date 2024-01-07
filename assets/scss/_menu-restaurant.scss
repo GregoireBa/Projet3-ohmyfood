@@ -81,7 +81,7 @@
   display: flex;
   background-color: $white;
   border-radius: 15px;
-  animation: fadeInUp 3s ease-out forwards;
+  animation: fadeInUp 1.5s ease-out forwards;
   opacity: 0;
 }
 
@@ -102,36 +102,36 @@
   animation-delay: 0.5s;
 }
 .carte-menu:nth-of-type(1) .card-food-item:nth-of-type(2) {
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 .carte-menu:nth-of-type(1) .card-food-item:nth-of-type(3) {
-  animation-delay: 1.5s;
+  animation-delay: 1.1s;
 }
 
 .carte-menu:nth-of-type(1) .card-food-item:nth-of-type(4) {
-  animation-delay: 1.9s;
+  animation-delay: 1.4s;
 }
 
 /* Animation pour les éléments de la section 'Plats' */
 .carte-menu:nth-of-type(2) .card-food-item:nth-of-type(1) {
-  animation-delay: 2s;
+  animation-delay: 1.7s;
 }
 .carte-menu:nth-of-type(2) .card-food-item:nth-of-type(2) {
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }
 .carte-menu:nth-of-type(2) .card-food-item:nth-of-type(3) {
-  animation-delay: 3s;
+  animation-delay: 2.3s;
 }
 
 /* Animation pour les éléments de la section 'Desserts' */
 .carte-menu:nth-of-type(3) .card-food-item:nth-of-type(1) {
-  animation-delay: 3.5s;
+  animation-delay: 2.6s;
 }
 .carte-menu:nth-of-type(3) .card-food-item:nth-of-type(2) {
-  animation-delay: 4s;
+  animation-delay: 2.9s;
 }
 .carte-menu:nth-of-type(3) .card-food-item:nth-of-type(3) {
-  animation-delay: 4.5s;
+  animation-delay: 3.2s;
 }
 
 .card-food-item__description {
